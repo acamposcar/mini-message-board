@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/new">New Message</a></li>
+            </ul>
+
+        </nav>
+        <hr>
+        <h1>
+            <%= title %>
+        </h1>
+        <div class="card">
+            <form method="POST" action="/new">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text">
+                <label for="name">Text</label>
+                <input id="text" name="text" type="text">
+                <input type="submit" value="Add Message">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
